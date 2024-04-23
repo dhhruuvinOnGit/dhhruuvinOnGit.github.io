@@ -88,7 +88,7 @@ Before you begin, ensure that you have the following installed:
 4. *Access the Application:*
 
    Open your favorite browser and visit [http://localhost:80](http://localhost:80). Enjoy exploring the MERN stack application!
-   ![Alt Text](https://raw.githubusercontent.com/chitt31/chitt31.github.io/master/images/36.PNG)
+   ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/11.png)
 
     
 ## Data Persistence
