@@ -30,7 +30,7 @@ Before you begin, ensure that you have the following installed:
    - bash
      docker network create my-network
      
-     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/blob/master/images/2.png)
+     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/2.png)
 1. *MySQL Database:*
 
    - Navigate to the mysql directory.
@@ -39,8 +39,8 @@ Before you begin, ensure that you have the following installed:
      docker build -t mysql-image .
      
      
-     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/blob/master/images/1.png)
-     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/blob/master/images/3.png)
+     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/1.png)
+     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/3.png)
 
      
    - Run the MySQL container:
