@@ -1,17 +1,8 @@
-layout: post
 title: Docker Three Tier Architecture 
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
 # Three-Tier Application Deployment using Dockerfile
 
-![Architecture](assets/Infra.gif)
-
-This repository demonstrates the deployment of a three-tier application using Docker, focusing on individual Dockerfiles for each component. The application comprises a MySQL database, a Node.js backend, and a React.js frontend.
 
 ## Prerequisites
 
@@ -39,7 +30,7 @@ Before you begin, ensure that you have the following installed:
    - bash
      docker network create my-network
      
-     ![Alt Text](https://raw.githubusercontent.com/chitt31/chitt31.github.io/master/images/22.PNG)
+     ![Alt Text](https://raw.githubusercontent.com/Being-Reprobate/being-reprobate.github.io/blob/master/images/network%20create%20.png)
 1. *MySQL Database:*
 
    - Navigate to the mysql directory.
@@ -48,13 +39,15 @@ Before you begin, ensure that you have the following installed:
      docker build -t mysql-image .
      
      
-     ![Alt Text](https://raw.githubusercontent.com/chitt31/chitt31.github.io/master/images/21.PNG)
+     ![Alt Text](https://raw.githubusercontent.com/Being-Reprobate/being-reprobate.github.io/blob/master/images/database%20image%20build1.png)
+     ![Alt Text](https://raw.githubusercontent.com/Being-Reprobate/being-reprobate.github.io/blob/master/images/database%20image%20build2.png)
+
      
    - Run the MySQL container:
      bash
      docker run --name mysql-container --network=three-tier-network -p 3306:3306 -v mysql-data:/var/lib/mysql -d mysql-image
      
-     ![Alt Text](https://raw.githubusercontent.com/chitt31/chitt31.github.io/master/images/30.PNG)
+     ![Alt Text](https://raw.githubusercontent.com/Being-Reprobate/being-reprobate.github.io/blob/master/images/database%20container%20creation.png)
    - Access the MySQL container:
      bash
      docker exec -it mysql-container /bin/bash
