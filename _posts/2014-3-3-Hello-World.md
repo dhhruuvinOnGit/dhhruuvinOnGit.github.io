@@ -26,13 +26,13 @@ Before you begin, ensure that you have the following installed:
 - *mysql*: Dockerfile and configurations for the MySQL database.
 
 ## Dockerfile(Database)
-![Alt Text](https://raw.githubusercontent.com/chitt31/chitt31.github.io/master/images/33.PNG)
+![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dockerDhruvin.github.io/blob/master/images/data1.png)
 
 
 ## Dockerfile(Backend)
-![Alt Text](https://raw.githubusercontent.com/chitt31/chitt31.github.io/master/images/34.PNG)
+![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dockerDhruvin.github.io/blob/master/images/data2.png)
 ## Dockerfile(Frontend)
-![Alt Text](https://raw.githubusercontent.com/chitt31/chitt31.github.io/master/images/35.PNG)
+![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dockerDhruvin.github.io/blob/master/images/data3.png)
 ## Deployment Steps
 0. *Create Network*
    - Navigate to the project directory
