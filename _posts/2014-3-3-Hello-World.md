@@ -40,26 +40,25 @@ Before you begin, ensure that you have the following installed:
      
      
      ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/1.png)
-     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/3.png)
 
      
    - Run the MySQL container:
      bash
      docker run --name mysql-container --network=three-tier-network -p 3306:3306 -v mysql-data:/var/lib/mysql -d mysql-image
      
-     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/6.png)
+     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/3.png)
    - Access the MySQL container:
      bash
      docker exec -it mysql-container /bin/bash
      
    - Inside the container, create tables for the database:
      sql
-     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/7.png)
+     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/6.png)
      USE school;
      CREATE TABLE student (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(40), roll_number INT, class VARCHAR(16));
      CREATE TABLE teacher (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(40), subject VARCHAR(40), class VARCHAR(16));
      
-     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/8.png)
+     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/6.png)
 2. *Backend Application:*
 
    - Navigate to the backend directory.
@@ -67,12 +66,12 @@ Before you begin, ensure that you have the following installed:
      bash
      docker build -t backend .
      
-     ![Alt Text](https://raw.githubusercontent.com/chitt31/chitt31.github.io/master/images/26.PNG)
+     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/7.png)
    - Run the backend container:
      bash
      docker run -d -p 3500:3500 --name backend-container --network=three-tier-network backend
      
-     ![Alt Text](https://raw.githubusercontent.com/chitt31/chitt31.github.io/master/images/27.PNG)
+     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/8.png)
 3. *Frontend Application:*
 
    - Navigate to the frontend directory.
@@ -80,12 +79,12 @@ Before you begin, ensure that you have the following installed:
      bash
      docker build -t frontend .
      
-     ![Alt Text](https://raw.githubusercontent.com/chitt31/chitt31.github.io/master/images/28.PNG)
+     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/9.png)
    - Run the frontend container:
      bash
      docker run -d --name frontend-container --network=three-tier-network -p 80:80 frontend
      
-     ![Alt Text](https://raw.githubusercontent.com/chitt31/chitt31.github.io/master/images/29.PNG)
+     ![Alt Text](https://raw.githubusercontent.com/dhhruuvinOnGit/dhhruuvinOnGit.github.io/master/images/10.png)
 4. *Access the Application:*
 
    Open your favorite browser and visit [http://localhost:80](http://localhost:80). Enjoy exploring the MERN stack application!
